@@ -8,12 +8,15 @@ import { AppComponent } from './app.component';
 import { StoreModule} from '@ngrx/store';
 import { EffectsModule} from '@ngrx/effects';
 
-
+// FOR ROUTES
+import { RouterModule, Routes } from '@angular/router';
+import { ROUTER_PROVIDER} from './routes/main.routes'
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
+    ROUTER_PROVIDER,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
